@@ -13,10 +13,44 @@
         <link rel="stylesheet" href="./counter.css">
     </head>
     <body>
-        <h2>hello world</h2>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        
+        <div class="counter-container">
+            <!-- counter heading -->
+            <div class="counterHeading">
+                <h5 class="counterHeading-text">We are coming soon.</h5>
+            </div>
+            <!-- text for visiting date -->
+            <div class="visitDate">
+                 16:09:26 NPT Sunday, 31 March 2024
+            </div>
+
+            <!-- container for time remaining to visit date  -->
+            <div class="counterTime">
+                <!-- about remaining days -->
+                <div class="remaining remainingDays">
+                    <input type="number"  readonly>
+                    <label class="remaining-title days-title">Days</label>
+                </div>
+
+                <!-- about remaining hours -->
+                <div class="remaining remainingHours">
+                    <input type="number" readonly>
+                    <label class="remaining-title hours-title">Hours</label>
+                </div>
+
+                <!-- about remaining minutes -->
+                <div class="remaining remainingMins">
+                    <input type="number" readonly>
+                    <label class="remaining-title remainingMins-title">Mins</label>
+                </div>
+
+                <!-- about remaining seconds -->
+                <div class="remaining remainingSecs">
+                    <input type="number" readonly>
+                    <label class="remaining-title Secs-title">Secs</label>
+                </div>
+            </div> <!--visit date container close-->
+        </div> <!--main container close-->
         
         <script src="./counter.js" async defer></script>
     </body>
